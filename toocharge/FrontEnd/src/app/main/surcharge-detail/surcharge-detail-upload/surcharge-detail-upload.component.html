@@ -1,0 +1,33 @@
+<div class="contain">
+    <div class="upload">
+        <div class="btnupload">
+            <input type="file" name="myfile" id="myfile" multiple (change)="onFileSelected($event)"><br><br>
+            <button (click)="upLoad($event)"><i class="fas fa-upload"></i>Up Load</button>
+        </div>
+        <app-surcharge-detail-list></app-surcharge-detail-list>
+       
+
+    </div>
+    <div class="changesurcharge">
+        <webcam [height]="350" [width]="350" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+            *ngIf="listSurchageService.showWebcam" [allowCameraSwitch]="allowCameraSwitch"
+            [switchCamera]="nextWebcamObservable" [videoOptions]="videoOptions"
+            (cameraSwitched)="cameraWasSwitched($event)" (initError)="handleInitError($event)"
+            [mirrorImage]="mirrorImage"></webcam>
+
+        <form class="sur">
+            <label for="surcharge">Surcharge <span>(*)</span></label><br>
+            <select id="surcharge" (change)="chooseSurcharge()">
+                <option value="" disabled selected>{{this.listSurchageService.surcharge}}</option>
+               <!-- <option *ngFor = "let sur of listSurchageService.listSurchage" [ngValue] = "sur.chargeName_VN">{{sur.chargeName_VN}}</option> -->
+            <option value="Phicauduong">Phí cầu đường</option>
+            <option value="Venangha">Vé Nâng Hạ</option>
+            
+            </select>
+        </form>
+        <button class="btncamera" (click)="triggerSnapshot()"><i class="fas fa-camera-retro"></i></button>
+        <div class="snapshot" *ngIf="webcamImage">
+            <img [src]="webcamImage.imageAsDataUrl" alt="">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+button {
+  margin-top: 65px;
+  background-color: rgb(48, 48, 187);
+  margin-left: 85%;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.fa-arrow-circle-right {
+  padding-right: 5px;
+  display: inline;
+}

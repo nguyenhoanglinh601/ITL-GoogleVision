@@ -1,0 +1,17 @@
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.csproj.CoreCompileInputs.cache
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.AssemblyInfoInputs.cache
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.AssemblyInfo.cs
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.deps.json
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.dll
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.pdb
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.dll
+E:\cong-intern\project\toolCharge\vendor-portal\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.pdb
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.deps.json
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.dll
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.pdb
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.csprojAssemblyReference.cache
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.csproj.CoreCompileInputs.cache
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.AssemblyInfoInputs.cache
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.AssemblyInfo.cs
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.dll
+E:\cong-intern\project\toolCharge\imageentry\toocharge\WebAPI\WebAPI.Service\obj\Debug\netcoreapp2.2\WebAPI.Service.pdb

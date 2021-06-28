@@ -1,0 +1,55 @@
+<div class="contain">
+    <button class="left" (click)="prevImage()">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <div class="content">
+        <p class="nameimg"></p>
+        <div class="imgdetail">
+            <lib-ngx-image-zoom [thumbImage]=myThumbnail [fullImage]=myFullresImage [magnification]="0.5"
+                [enableScrollZoom]="true" [enableLens]="true" [lensWidth]="200"></lib-ngx-image-zoom>
+        </div>
+        <div class="infor">
+            <table class="table-infor">
+                <thead class="">
+                    <tr>
+                        <th class="name">Tên</th>
+                        <th class="numcontact">Số HĐ</th>
+                        <th class="tax">Mã số thuế</th>
+                        <th class="price">Price</th>
+                        <th class="curency">Curency</th>
+                        <th class="vat">Include VAT</th>
+                        <th class="rate"> VAT Role</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody1">
+                    <tr>
+                        <td class='col-infor4'>
+                            <input type="text" name = "name" #name = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].name" >
+                        </td>
+                        <td class='col-infor5'>
+                            <input type="text" name = "ticketnumber" #ticket #ticketnumber = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].inforSurcharge.ticketNumber">
+                        </td>
+                        <td class='col-infor6'>
+                            <input type="text" name = "taxcode" #taxcode = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].inforSurcharge.taxCode">
+                        </td>
+                        <td class='col-infor7'>
+                            <input type="text" name = "price" #price = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].inforSurcharge.price" >
+                        </td>
+                        <td class='col-infor8'>
+                            <input type="text" name = "cur" #cur = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].currency">
+                        </td>
+                        <td class='col-infor9'>
+                            <input type="text" name = "includeVAT" #includeVAT = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].includeVAT"> 
+                        </td>
+                        <td class='col-infor10'>
+                            <input type="text" name = "VATrate" #VATrate = "ngModel" [(ngModel)] = "this.surchargeDetailService.surCharge[currentID].VATrate">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button class="right" (click)="nextImage()">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+</div>

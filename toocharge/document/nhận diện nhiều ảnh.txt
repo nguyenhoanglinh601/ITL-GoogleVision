@@ -1,0 +1,11 @@
+
+
+Ý tưởng: 
+- Lấy 4 tọa độ của parent image
+- cộng trừ nhân chia bla bla để khoanh vùng từng bức ảnh, ví dụ 8 bức
+- lọc qua từng item, tọa độ nằm trong vùng nào thì cho vô list vùng đó
+- dựa vào vị trí, bitmap lấy cắt ra được các hình nhỏ,
+- response là json kết quả kèm theo tấm hình nhỏ đó
+
+
+https://stackoverflow.com/questions/35027878/asp-net-core-image-upload-and-resize

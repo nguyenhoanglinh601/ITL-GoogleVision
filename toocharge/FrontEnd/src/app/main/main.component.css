@@ -1,0 +1,39 @@
+.contain .header {
+  background: #1b3f91;
+  height: 35px;
+}
+h4 {
+  text-align: center;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.42857;
+  color:#fff;
+  padding: 5px;
+  font-family: 'Roboto SemiBold', sans-serif;
+}
+.contain {
+  border-radius: 10px;
+  position: relative;
+
+}
+button{
+  width: 35px;
+  height: 35px;
+  background-color: #d0312c;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i{
+  color: #fff;
+  font-size: 30px;
+}
+.main{
+  background-color: #eff3f6;
+  padding: 0px 20px 0px 20px;
+
+}

@@ -1,0 +1,90 @@
+<div class="list">
+  <p style="color: red;"><i>Click on each image to edit!</i></p>
+  <div class="containtable">
+    <table class=" table-hover" id="tableListSurcharge">
+      <thead class="">
+        <tr>
+          <th class="stt col1"> <input type="checkbox" name="" id="checkall" (change) = "checkAll()"></th>
+          <th class="on col2">#</th>
+          <th class="img col3">File</th>
+          <th class="name col4">Tên</th>
+          <th class="numcontact col5">Số HĐ</th>
+          <th class="tax col6">Mã số thuế</th>
+          <th class="price col7">Price</th>
+          <th class="curency col8">Cur</th>
+          <th class="vat col9">Include VAT</th>
+          <th class="rote col10"> VAT Role</th>
+          <th class="delete col11"></th>
+        </tr>
+        <!-- <tr class="filter">
+          <td class="col1"></td>
+          <td class="col2"></td>
+          <td class="col3"></td>
+          <td class="col4"><input type="text" name="" class="form-control" placeholder="Filter"></td>
+          <td class="col5"><input type="text" name="" class="form-control " placeholder="Filter"></td>
+          <td class="col6"><input type="text" name="" class="form-control " placeholder="Filter"></td>
+          <td class="col7"><input type="text" name="" class="form-control " placeholder="Filter"></td>
+          <td class="col8"><input type="text" name="" class="form-control " placeholder="Filter"></td>
+          <td class="col9"><input type="text" name="" class="form-control " placeholder="Filter"></td>
+          <td class="col10"><input type="text" name="" class="form-control" placeholder="Filter"></td>
+          <td class="col11"></td>
+        </tr> -->
+      </thead>
+      <tbody class="tbody">
+        <tr *ngFor = "let sur of this.surchargeDetailService.surCharge; let i = index" [id] = "i">
+          <ng-template [ngIf] = "sur.inforSurcharge.ticketNumber!='' && sur.inforSurcharge.taxCode!='' && sur.inforSurcharge.price!=''" [ngIfElse] = "ban">
+            <td class = 'col1 check'><input type="checkbox" name="" id="" value = "checkbox"></td>
+          </ng-template>
+          <ng-template #ban>
+            <td class = 'col1 check'><input type="hidden" value = "ban"> <i class="fas fa-ban"></i></td>
+          </ng-template>
+          <td class = 'col2'>{{i+1}}</td>
+          <td class = 'col3'  id = "img" (click) = "showDetailImage(i)">
+            <img id="imgsur" [src]="_DomSanitizationService.bypassSecurityTrustUrl(sur.src)" alt="">
+          </td>
+          <td class = 'col4'>
+            <input type="text" name="name" #name="ngModel" [(ngModel)] = "sur.name" disabled/>
+          </td>
+          <td class = 'col5'>
+            <input type="text" name="ticketNumber" #ticketNumber="ngModel" [(ngModel)] = "sur.inforSurcharge.ticketNumber" disabled/>
+          </td>
+          <td class = 'col6'>
+            <input type="text" name="taxCode" #taxCode="ngModel" [(ngModel)] = "sur.inforSurcharge.taxCode" maxlength="10" pattern="[0-9]*" inputmode="numeric" disabled/>
+          </td>
+          <td class = 'col7'>
+            <input type="text" name="price" #price="ngModel" [(ngModel)] = "sur.inforSurcharge.price" disabled/>
+          </td>
+          <td class = 'col8'>
+            <input type="text" name="currency" #currency="ngModel" [(ngModel)] = "sur.currency" disabled/>
+          </td>
+          <td class = 'col9'>
+            <input type="text" name="includeVAT" #includeVAT="ngModel" [(ngModel)] = "sur.includeVAT" disabled/>
+          </td>
+          <td class = 'col10'>
+            <input type="text" name="VATrate" #VATrate="ngModel" [(ngModel)] = "sur.VATrate" disabled/>
+          </td>
+          <ng-template  [ngIf]="sur.check === true" [ngIfElse]="saveAndUnsave">
+            <td class = "col11" id = "icon">
+              <i class="icon-trash-2 del" (click) = "delete(i)"></i>
+              <i class="icon-edit-3 edit" (click) = " replaceTagDelAndEdit(i); sur.check = !sur.check"></i>
+            </td>
+          </ng-template>
+          
+          <ng-template #saveAndUnsave>
+            <td class = "col11" id = "icon" >
+              <i class="fas fa-save save" (click) = "sur.check = !sur.check; save(i)"></i>
+              <i class="fas fa-times unsave" (click) = "sur.check = !sur.check; unsave(i)"></i>
+            </td>
+          </ng-template>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer">
+    <div class="grbtnsave">
+      <button class=" btn btn-sm btn-ftl-outline-primary" tabindex="1" (click)="exportErrorList()">Export Error List</button>
+      <button class=" btn btn-sm btn-ftl-primary" tabindex="0" (click) = "importData()"><i class="icon-save"></i>Save</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.2">
+      <AllowExplicitVersion>true</AllowExplicitVersion>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WebAPI.DL">
+      <HintPath>..\WebAPI.DL\bin\Debug\netcoreapp2.2\WebAPI.DL.dll</HintPath>
+    </Reference>
+    <Reference Include="WebAPI.Service">
+      <HintPath>..\WebAPI.Service\bin\Debug\netcoreapp2.2\WebAPI.Service.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

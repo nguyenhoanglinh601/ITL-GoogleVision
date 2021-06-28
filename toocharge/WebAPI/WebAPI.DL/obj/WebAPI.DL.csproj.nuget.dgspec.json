@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.DL\\WebAPI.DL.csproj": {}
+  },
+  "projects": {
+    "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.DL\\WebAPI.DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.DL\\WebAPI.DL.csproj",
+        "projectName": "WebAPI.DL",
+        "projectPath": "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.DL\\WebAPI.DL.csproj",
+        "packagesPath": "C:\\Users\\intern.lth012\\.nuget\\packages\\",
+        "outputPath": "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.DL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\intern.lth012\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

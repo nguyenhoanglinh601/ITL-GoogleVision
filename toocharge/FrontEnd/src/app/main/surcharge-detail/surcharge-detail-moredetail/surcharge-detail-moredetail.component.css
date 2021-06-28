@@ -1,0 +1,100 @@
+
+.modal-content {
+  display: block;
+  border-radius: 0px;
+  position: relative;
+  border: 0;
+}
+.contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain .content {
+  height: 550px;
+  width: 1000px;
+  background-color: white;
+}
+
+.contain .content .infor table {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contain .content .imgdetail {
+  height: 420px;
+  width: 1000px;
+  justify-content: center;
+  display: flex;
+}
+
+::ng-deep .ngxImageZoomContainer img {
+  max-height: 400px;
+  position: absolute;
+}
+::ng-deep .ngxImageZoomFullContainer img {
+  position: absolute !important;
+  align-self: center;
+}
+::ng-deep .ngxImageZoomContainer {
+  height: 400px !important;
+  width: 1000px !important;
+  justify-content: center;
+  display: flex;
+}
+::ng-deep .ngxImageZoomContainer:hover {
+  width: none !important;
+}
+.contain .content .infor .table-infor {
+  display: block;
+}
+/* .contain .content .infor .table-infor thead {
+  display: inline-block;
+} */
+.col-infor4,
+.name {
+  width: 140px;
+}
+.col-infor5,
+.numcontact {
+  width: 140px;
+}
+.col-infor6,
+.tax {
+  width: 140px;
+}
+.col-infor7,
+.price {
+  width: 140px;
+}
+.col-infor8,
+.curency {
+  width: 140px;
+}
+.col-infor9,
+.vat {
+  width: 140px;
+}
+.col-infor10,
+.rate {
+  width: 140px;
+}
+
+.contain button {
+  height: 140px;
+  width: 40px;
+  font-size: 50px;
+  color: black;
+  background-color: transparent;
+  border: transparent;
+}
+.contain button:focus {
+  border: transparent;
+}
+table tbody tr td input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  color: black;
+}

@@ -1,0 +1,22 @@
+<div class="modal-content">
+    <form>
+        <div class="modal-header">
+            <button class="close" (click) = "close()">
+                <i class="icon-x"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p style="font-size:large;">{{message}}</p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-sm btn-ftl-primary" tabindex="0" (click) = "cancel()">
+                <i class="icon-slash"></i>
+                <span>Cancel</span>
+            </button>
+            <button class="btn btn-sm btn-ftl-outline-primary" tabindex="1" (click) = "ok()">
+                <i class="icon-check"></i>
+                <span>OK</span>
+            </button>
+        </div>
+    </form>
+</div>

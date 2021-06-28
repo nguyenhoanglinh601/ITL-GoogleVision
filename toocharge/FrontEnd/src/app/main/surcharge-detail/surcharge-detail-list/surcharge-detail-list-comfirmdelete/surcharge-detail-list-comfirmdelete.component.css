@@ -1,0 +1,61 @@
+.modal-content {
+  height: 200px;
+  display: block;
+  border-radius: 0px;
+  position: relative;
+  border: 0;
+}
+.modal-header {
+  border-bottom: 0;
+  height: 35px;
+}
+
+/* .modal-header button {
+    border: transparent;
+} */
+.modal-body {
+    height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.modal-footer {
+  border-top: 1.5px solid #1565aa;
+  height: 65px;
+}
+/* .modal-footer button {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.modal-footer .ok {
+  background-color: transparent;
+  color: #1565aa;
+}
+/* .modal-footer button:hover {
+  background-color:  #105694;
+} */
+.modal-footer .cancel .fa-ban{
+  
+  color: white;
+}
+/* .modal-footer button i {
+  padding-right: 8px;
+} */
+
+.closed {
+  width: 35px;
+  height: 35px;
+  background-color: #d0312c;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  border: 0;
+}
+.fa-times {
+  color: #fff;
+  font-size: 30px;
+}

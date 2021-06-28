@@ -1,0 +1,42 @@
+<div> 
+    <form #form="ngForm" autocomplete="off" class="contain"  >
+        <div class="form-group" >
+            <label>Ref No<span>(*)</span></label>
+            <input type="text" name="refNo" #refNo="ngModel" [(ngModel)]="tranService.formData.refNo"
+            [disabled]="tranService.isDisabled" placeholder="Ref No" required
+            (keyup.enter)="onEnter()" class = "form-control"
+                [class.invalid]="refNo.invalid &#038;&#038; refNo.touched" >
+        </div>
+        <div class="form-group">
+            <label>Place From</label>
+            <input type="text" name="placeFrom" #placeFrom="ngModel" [(ngModel)]="tranService.formData.placeFrom"
+                 placeholder="Place From" required
+                 class = "form-control"
+                [class.invalid]="placeFrom.invalid &#038;&#038; placeFrom.touched" disabled>
+        </div>
+        <div class="form-group">
+            <label>Place To</label>
+            <input type="text" name="placeTo" #placeTo="ngModel" [(ngModel)]="tranService.formData.placeTo"
+                 placeholder="Place To" required class = "form-control"
+                [class.invalid]="placeTo.invalid &#038;&#038; placeTo.touched" disabled>
+        </div>
+        <div class="form-group">
+            <label>Excution Date</label>
+            <input type="text" name="excutionDate" #excutionDate="ngModel" [(ngModel)]="tranService.formData.excutionDate"
+                 placeholder="Excution Date" required class = "form-control"
+                [class.invalid]="excutionDate.invalid &#038;&#038; excutionDate.touched" disabled>
+        </div>
+        <div class="form-group">
+            <label>Driver Name</label>
+            <input type="text" name="driverName" #driverName="ngModel" [(ngModel)]="tranService.formData.driverName"
+                 placeholder="Driver Name" required class = "form-control"
+                [class.invalid]="driverName.invalid &#038;&#038; driverName.touched" disabled>
+        </div>
+        <div class="form-group">
+            <label>License Plate</label>
+            <input type="text" name="licensePlate" #licensePlate="ngModel" [(ngModel)]="tranService.formData.licensePlate"
+                 placeholder="License Plate" required class = "form-control"
+                [class.invalid]="licensePlate.invalid &#038;&#038; licensePlate.touched" disabled>
+        </div>
+    </form>
+</div>

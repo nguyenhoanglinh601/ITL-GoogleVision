@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.Service\\WebAPI.Service.csproj": {}
+  },
+  "projects": {
+    "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.Service\\WebAPI.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.Service\\WebAPI.Service.csproj",
+        "projectName": "WebAPI.Service",
+        "projectPath": "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.Service\\WebAPI.Service.csproj",
+        "packagesPath": "C:\\Users\\intern.lth012\\.nuget\\packages\\",
+        "outputPath": "E:\\cong-intern\\project\\toolCharge\\vendor-portal\\toocharge\\WebAPI\\WebAPI.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\intern.lth012\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.list {
+  margin: 20px 0px;
+}
+.list .containtable {
+  width: 100%;
+}
+
+.list table thead tr th {
+  background-color: #02419b;
+  color: #fff;
+  font-family: inherit;
+  height: 25px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid transparent;
+}
+
+.col1 {
+  width: 30px;
+}
+.col2 {
+  width: 30px;
+}
+.col3 {
+  width: 60px;
+}
+.col4 {
+  width: 145px;
+}
+.col5 {
+  width: 145px;
+}
+.col6 {
+  width: 145px;
+}
+.col7 {
+  width: 100px;
+}
+.col8 {
+  width: 50px;
+}
+.col9 {
+  width: 100px;
+}
+.col10 {
+  width: 75px;
+}
+.col11 {
+  width: 80px;
+}
+
+.list table thead tr .form-control {
+  height: 25px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 0px;
+}
+.list table thead tr .form-control:focus:active {
+  background-color: #fff;
+}
+.list table thead .filter {
+  background-color: #f2f2f2;
+}
+#imgsur {
+  height: 25px;
+  cursor: pointer;
+}
+table {
+  height: 210px;
+  display: block;
+  font-size: 15px;
+}
+
+tbody {
+  height: 100%;
+  display: block;
+  overflow: auto;
+
+}
+table tbody tr td input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  color: black;
+}
+table tbody tr td input:focus{
+  outline: none;
+}
+table tbody tr td{
+  border: 1px solid #cecece;
+}
+.del, .fa-save{
+  color: red;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+.edit, .fa-times{
+  cursor: pointer;
+}
+.fa-ban{
+  color: red;
+  padding-left: 8px;
+}
+.contain .upload .grbtnsave {
+  margin-top: 40px;
+  width: 250px;
+  position: absolute;
+  right: 60px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+button {
+  border-radius: 0;
+}
